@@ -460,7 +460,7 @@ var Weather = function (_React$Component) {
     key: 'parseWeather',
     value: function parseWeather(data) {
       var location = data.name;
-      var temp = Math.floor(data.main.temp - 273.15) + ' : Celsius';
+      var temp = Math.floor(data.main.temp - 273.15);
       this.setState({ location: location, temp: temp });
       // console.log(data.location);
     }

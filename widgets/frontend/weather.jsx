@@ -21,7 +21,7 @@ class Weather extends React.Component {
 
   parseWeather(data){
     const location = data.name;
-    const temp = `${Math.floor((data.main.temp) - 273.15)} : Celsius` ;
+    const temp = Math.floor((data.main.temp) - 273.15);
     this.setState({ location, temp});
     // console.log(data.location);
   }
