@@ -46,5 +46,5 @@
 }
 
 .is-open {
-  display: inherit;
+  display: inherit !;
 }
