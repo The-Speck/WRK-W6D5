@@ -1,6 +1,7 @@
 import React from 'react';
 import Clock from './clock';
 import Tab from './tab';
+import Weather from './weather';
 
 const Root = () => {
   return (
@@ -14,6 +15,9 @@ const Root = () => {
           {title: 'two',content: 'Second pane here'},
           {title: 'three', content: 'Third pane here'}
         ]} />
+      </div>
+      <div>
+        <Weather />
       </div>
     </div>
   );
